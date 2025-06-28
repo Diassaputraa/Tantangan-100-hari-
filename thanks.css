@@ -1,0 +1,51 @@
+/* Pastikan elemen body mencakup seluruh tinggi layar */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal */
+    align-items: center; /* Horizontal */
+    text-align: center; /* Agar teks berada di tengah */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Warna latar belakang untuk kontras */
+}
+
+/* Gaya untuk elemen h1 */
+h1 {
+    font-size: 2.5em;
+    color: #fe5b29;
+    margin: 0; /* Hapus margin bawaan */
+}
+
+/* Gaya untuk pesan terima kasih */
+.thank-you-message {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0; /* Beri jarak vertikal */
+}
+
+/* Gaya untuk tombol */
+.back-home a {
+    display: inline-block; /* Agar padding berlaku */
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #fe5b29;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+.back-home a:hover {
+    background-color: #0056b3;
+}
+
+.thank-you-image {
+    margin-top: 20px; /* Jarak dari teks sebelumnya */
+    max-width: 300px; /* Membatasi lebar gambar */
+    width: 100%; /* Responsif pada layar kecil */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    display: block; /* Agar gambar mengikuti aturan tata letak */
+}

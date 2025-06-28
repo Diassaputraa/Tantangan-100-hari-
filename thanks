@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Warna latar belakang untuk memberikan kontras */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fe5b29;
+    text-align: center;
+}
+
+.thank-you-message {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-home {
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: #fe5b29;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: #0056b3;
+}

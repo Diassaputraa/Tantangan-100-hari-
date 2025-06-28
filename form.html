@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <title>YasshiroRental</title>
+    <link rel="icon" href="favicon.icon">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> 
+</head>
+<body>
+
+    <script src="navbar.js" defer></script>
+    <script src="index.js"></script>
+
+     <nav>
+        <a href="index.html" class="brand">
+          <h1>Yasshiro<b class="accent">Rental</b></h1>  
+        </a>
+        <div class="menu">
+            <div class="btn">
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul id="menu-list" class="hidden">
+                <a href="index.html">HOME</a>
+                <a href="cars.html">CARS</a>
+                <a href="form.html">FORM</a>
+                <a href="about-us.html">ABOUT</a>
+    
+            </ul>
+        </div>
+
+    </button>
+
+    <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+    </div>
+    
+
+    </nav>
+
+    <section id="form" class="form-section">
+        <div class="form-container">
+            <h1 class="form-title">Formulir Peminjaman Mobil</h1>
+                <form action="thanks.html" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama Pelanggan</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="rental-date">Tanggal Peminjaman</label>
+                    <input type="date" id="rental-date" name="rental-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="return-date">Tanggal Pengembalian</label>
+                    <input type="date" id="return-date" name="return-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="car-type">Jenis Mobil</label>
+                    <select id="car-type" name="car-type" onchange="calculateTotal()" required>
+                        <option value="" disabled selected>Pilih jenis mobil</option>
+                        <option value="Ferrari" data-price="193000000">Ferrari 812- Rp 193.000.000/hari</option>
+                        <option value="Porshe" data-price="188000000">Porshe 911 - Rp 188.000.000/hari</option>
+                        <option value="Chiron" data-price="235000000">Bugatti Veyron - Rp 235.000.000/hari</option>
+                        <option value="bmw" data-price="815000000">BMW M4 - Rp 815.000.000/hari</option>
+                        <option value="Agera" data-price="172000000">Koenigsegg Regera - Rp 172.000.000/hari</option>
+                        <option value="Supra" data-price="203000000">Toyota Supra - Rp 203.000.000/hari</option>
+                        <option value="mercedes" data-price="191000000">Mercedes Benz AMG S 63 - Rp 191.000.000/hari</option>
+                        <option value="Audi" data-price="165000000">Audi A6 - Rp 165.000.000/hari</option>
+                        <option value="Koenigsegg" data-price="170000000">Koenigsegg Jesko - Rp 170.000.000/hari</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="total-price">Total Harga (Rp)</label>
+                    <input type="text" id="total-price" name="total-price" readonly placeholder="Total harga akan muncul di sini">
+                </div>
+                
+                <button type="submit" class="submit-btn">Kirim Formulir</button>
+
+            </form>
+        </div>
+    </section>
+   
+
+    <div class="footer">
+        
+        <div class="contact-info">
+            <p>Selamat menikmati layanan kelas dunia, hanya di YASSHIRO RENTAL FACILITY.</p>
+            <p>Margonda | Depok</p>
+            <p>📞 +62-821-2409-5032</p>
+            <p>📧 <a href="mailto:shiro@facility.com">shiro@facility.com</a></p>
+</div>
+</body>
+</html>
